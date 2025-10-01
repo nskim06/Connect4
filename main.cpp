@@ -28,10 +28,10 @@ int main()
 	const int COLS = 5;
 	const int ROWS = 5;
 
-	
 	SmartPlayer sp1("genius");
 	BadPlayer bp("dumb");
-	Game g1(4, 3, 2, &sp1, &bp);
+	HumanPlayer hp("human");
+	Game g1(COLS, ROWS, 4, &hp, &sp1);
 	g1.play();
 
 }
